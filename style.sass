@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap&subset=latin-ext')
-    
-    
-$body-bg: transparent; 
-=inputStyles()
-    background-color: blue
 
+$body-bg: transparent; 
 body
     margin: 0
     padding: 0
@@ -18,7 +14,6 @@ body
      display: flex
      color: white
      flex-direction: column
-     
      background-size: cover
      background-repeat: repeat-y
      background-image: url("../../img/prism.png")
@@ -54,8 +49,6 @@ body
     padding: 10px
     overflow: hidden
 
-
-
 .addTask
      font-family: 'Nunito Sans', sans-serif
      box-sizing: border-box
@@ -67,7 +60,6 @@ body
      height: 100vh
      width: 100%
      padding: 5%
-   
      transition: .5s linear
      .background
          position: absolute
@@ -77,9 +69,6 @@ body
          width: 100%
          height: 100%
          z-index: -1
-         
-         
-     
      i
         position: absolute
         left: 7%
@@ -91,8 +80,6 @@ body
      form
         display: flex 
         flex-direction: column
-        
-        
         height: 100%
         input,
         button,
@@ -110,8 +97,6 @@ body
             margin: 20px auto
             text-transform: uppercase
             border: 5px solid #2e62dd
-           
-            
         label
             margin-right: 20px  
         input:focus,
@@ -123,7 +108,6 @@ body
     .things
         display: flex
         flex-wrap: wrap
-    
     .tasks
         font-size: 30px
         button
@@ -131,12 +115,10 @@ body
         input
             font-size: 30px
             margin-top: 60px
-        
     .task
         flex: 1 0 40%
         margin: 2%
         font-size: 25px
-    
     .addTask
         i
           font-size: 40px
@@ -148,25 +130,21 @@ body
           button,
           label
               font-size: 30px
+
 @media (orientation:landscape) and (max-width:760px) 
      .addTask
-
-     
-        
         i
           font-size: 20px
         h1 
           font-size: 25px
           margin: 0     
         form
-          
           input,
           textarea,
           button
               width: 70%
               font-size: 15px
               padding: 1.5%
-              
               justify-content: flex-start
               border-radius: 15px
               margin: 14px auto 0
@@ -174,12 +152,8 @@ body
               padding: 1px 2px
               width: 40%
          
-              
 @media (min-width: 1280px) 
-    
-    
     .addTask
-        
         i
           font-size: 30px
         h1 

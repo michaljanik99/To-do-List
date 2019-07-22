@@ -1,3 +1,4 @@
+// dowoland items
 const inputTaskTitle = document.querySelector('.addTask form .title');
 const inputTaskDescription = document.querySelector('.addTask form .description');
 const inputTaskTime = document.querySelector('.addTask form .time');
@@ -19,41 +20,32 @@ inputAddBtn.addEventListener('click', () => {
 document.querySelector('.addTask i').addEventListener('click', () => {
     document.querySelector('.addTask').style.left = `100%`;
 })
-
+// delete task item
 const deleteFunction = e => {
     e.target.parentNode.remove();
     counter.textContent = elementsList.length;
 
 
 }
-
+// add new task item
 const addTask = e => {
     e.preventDefault()
     if (inputTaskTitle.value === '') return;
     const task = document.createElement('div');
     task.className = 'task';
-
     const dateOfTask = new Date(inputTaskDate.value)
     const month = dateOfTask.getMonth()
     const year = dateOfTask.getFullYear()
     const day = dateOfTask.getDate()
-
-
-
-
-
     task.innerHTML = `<h1>${inputTaskTitle.value}</h1>` + `<p>${inputTaskDescription.value}</p>` + `<p>${inputTaskTime.value}</p>` + `<p>${day} ${months[month]} ${year} </p>` + '<button>Delete</button>';
-
     list.appendChild(task);
-
     task.querySelector('button').addEventListener('click', deleteFunction);
     eleme.push(task);
     counter.textContent = elementsList.length;
     document.querySelector('.addTask').style.left = `100%`;
-
     document.getElementById('form').reset()
 }
-
+// serch bar script
 const searchTask = e => {
     e.preventDefault()
     if (e.target.value !== '') {
@@ -71,8 +63,5 @@ const searchTask = e => {
 
 
 }
-
-
 searchInput.addEventListener('input', searchTask)
-
 inputBtn.addEventListener('click', addTask);
