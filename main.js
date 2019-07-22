@@ -51,6 +51,7 @@ const addTask = e => {
     counter.textContent = elementsList.length;
     document.querySelector('.addTask').style.left = `100%`;
 
+    document.getElementById('form').reset()
 }
 
 const searchTask = e => {

@@ -182,6 +182,32 @@ body {
   }
 }
 
+@media (orientation: landscape) {
+  .addTask i {
+    font-size: 20px;
+  }
+  .addTask h1 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .addTask form input,
+  .addTask form textarea,
+  .addTask form button {
+    width: 70%;
+    font-size: 15px;
+    padding: 1.5%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-radius: 15px;
+    margin: 14px auto 0;
+  }
+  .addTask form button {
+    padding: 1px 2px;
+    width: 40%;
+  }
+}
+
 @media (min-width: 1280px) {
   .addTask i {
     font-size: 30px;
