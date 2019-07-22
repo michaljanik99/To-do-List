@@ -6,18 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project To-do List</title>
+    <script src="https://kit.fontawesome.com/0febc6ebd6.js"></script>
+    <link rel="stylesheet" href="zadanie1-Nav-Sass-START/css/style.css">
+
 </head>
 
 <body>
-    <h1>Liczba zadani <span>0</span></h1>
-    <form action="">
-        <input type="text" class="input">
-        <button>Add task</button>
-        <input type="text" class="input">
+
+    <main>
+
+        <section class="tasks">
 
 
-    </form>
-    <ul></ul>
+
+            <form action="">
+
+                <input type="text" class="input" placeholder="Type here to find">
+            </form>
+            <button>Add new task</button>
+            <h1>Number of tasks <span>0</span></h1>
+            <div class="things"></div>
+
+        </section>
+        <section class="addTask">
+            <div class="background"></div>
+            <i class="fas fa-arrow-left"></i>
+            <h1>Add new task to list</h1>
+            <form action="">
+                <input type="text" class="title" placeholder="Task name">
+                <textarea class="description" placeholder="description"></textarea>
+                <label> Time <input type="time" class="time"></label>
+                <input type="date" class="date">
+
+
+                <button>Add new task</button>
+            </form>
+
+        </section>
+    </main>
     <script src="main.js"></script>
 </body>
 

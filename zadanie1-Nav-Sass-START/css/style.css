@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap&subset=latin-ext");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.tasks {
+  font-family: 'Nunito Sans', sans-serif;
+  position: relative;
+  left: 0;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-image: url("../../img/prism.png");
+  text-align: center;
+}
+
+.tasks button {
+  font-family: 'Nunito Sans', sans-serif;
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  padding: 2%;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.tasks input {
+  width: 80%;
+  margin: 20px auto;
+  padding: 3%;
+  outline: none;
+  border-radius: 15px;
+  border: none;
+}
+
+.tasks input:focus {
+  border-bottom: 5px solid #2e62dd;
+  font-weight: bold;
+}
+
+.tasks .things button {
+  width: 30%;
+}
+
+.task {
+  background-color: rgba(46, 98, 221, 0.3);
+  border-radius: 5px;
+  margin: 5%;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.addTask {
+  font-family: 'Nunito Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  text-align: center;
+  color: white;
+  left: 100%;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  padding: 5%;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+}
+
+.addTask .background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.addTask i {
+  position: absolute;
+  left: 7%;
+  top: 5%;
+  font-size: 20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.addTask h1 {
+  font-size: 30px;
+}
+
+.addTask form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.addTask form input,
+.addTask form button,
+.addTask form textarea {
+  padding: 3%;
+  outline: none;
+  margin: 20px 0;
+  border-radius: 15px;
+  border: 0px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.addTask form button {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+  margin: 20px auto;
+  text-transform: uppercase;
+  border: 5px solid #2e62dd;
+}
+
+.addTask form label {
+  margin-right: 20px;
+}
+
+.addTask form input:focus,
+.addTask form textarea:focus {
+  border: 5px solid #2e62dd;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .things {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tasks {
+    font-size: 30px;
+  }
+  .tasks button {
+    font-size: 30px;
+  }
+  .tasks input {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+  .task {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 40%;
+            flex: 1 0 40%;
+    margin: 2%;
+    font-size: 25px;
+  }
+  .addTask i {
+    font-size: 40px;
+  }
+  .addTask h1 {
+    font-size: 45px;
+  }
+  .addTask form input,
+  .addTask form textarea,
+  .addTask form button,
+  .addTask form label {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .addTask i {
+    font-size: 30px;
+  }
+  .addTask h1 {
+    font-size: 25px;
+  }
+  .addTask form input,
+  .addTask form textarea,
+  .addTask form button,
+  .addTask form label {
+    font-size: 20px;
+    padding: 1.5%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
