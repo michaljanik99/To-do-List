@@ -116,8 +116,9 @@ body {
 .addTask form button,
 .addTask form textarea {
   padding: 3%;
+  width: 80%;
   outline: none;
-  margin: 20px 0;
+  margin: 20px auto;
   border-radius: 15px;
   border: 0px;
   font-family: 'Nunito Sans', sans-serif;
